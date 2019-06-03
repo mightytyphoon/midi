@@ -1,27 +1,54 @@
 # Aulos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+## Install
 
-## Development server
+### Prerequisites
+1. have nodeJS + npm installed (CURRENT VERSION) => https://nodejs.org/en/
+2. have git installed => https://git-scm.com/downloads
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Steps
+1. download the repo on your pc by typing ``git clone https://github.com/mightytyphoon/midi midi`` in command line (cmd, terminal) (needs to have git cli)
+2. go in the midi directory and run : ``npm i`` in cmd/terminal this will install all dependencies
+   1. note : postinstall of nw && ng can be long, be patient
+3. run the program with : 
+   1. ``npm run dev``
+   2. ``npm start`` still in terminal
+4. the save will be originalFileName.mid => originalFileName-transposee.mid at the same place
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+![alt text](https://i.ibb.co/ZNMK5qs/Sans-titre.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Prérequis
+1. avoir installé nodejs et npm (CURRENT VERSION) => https://nodejs.org/en/
+2. avoir installé git => https://git-scm.com/downloads
 
-## Running unit tests
+### Steps
+1. ouvrir l'invite de commandes / le terminal (mac) et se placer à l'endroit désiré pour le téléchargement
+2. télécharger le repository en tapant ``git clone https://github.com/mightytyphoon/midi midi`` dans l'invite de commandes (windows) ou le terminal (mac)
+   1. note : la post-installation de nw peut être longue.
+3. 
+4. aller dans le répertoire téléchargé en tapant `` cd midi``
+5. puis taper ``npm i`` dans le terminal/invite de commande windows pour installer les dépendances
+6. lancer le programme avec : ``npm start``
+7. le fichier sauvegardé se trouvera dans le meme repertoire que celui d'origine avec -transposee en plus dans le nom
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Improvements
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Interface & app (angular)
+2. Select tracks
+3. Higher Octave steps
+4. Save Transpositions
+5. View Midi file
+6. Change name from transposee to substitution (Harmonie Negative Substitution) in code (already done in package)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Bugs
+1. add track
+2. sometimes delete notes
+3. sometimes doesn't change notes
+4. ADD MIDI CORRESPONDANCE
+   1. par exemple pour aller de Mi à Sol c'est +3 normalement
+    et si on ajoute une octave
+    c'est +12 en plus

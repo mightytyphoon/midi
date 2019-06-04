@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 // import { saveAs } from 'file-saver';
 // const MidiRequire = require('@tonejs/midi');
+// test
 import { Midi } from '@tonejs/midi';
 import { Track } from '@tonejs/midi/dist/Track';
 declare var fs: any;

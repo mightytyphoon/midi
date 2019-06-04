@@ -1,10 +1,12 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { saveAs } from 'file-saver';
-import * as midiParser from '@tonejs/midi';
+// import { saveAs } from 'file-saver';
+// const MidiRequire = require('@tonejs/midi');
 import { Midi } from '@tonejs/midi';
 import { Track } from '@tonejs/midi/dist/Track';
-const MidiRequire = require('@tonejs/midi');
 declare var fs: any;
+declare var process: any;
+declare var Buffer: any;
+declare var midiParser: any;
 
 
 // ADD CHECK OUT OF BOUNDS MIDI VALUE
@@ -107,6 +109,7 @@ export class AppComponent {
   save() {
     const sub = this.getSubstitution();
     this.subAll(sub);
+
     const data = new Buffer(this.midiFile.toArray());
     const home = process.env.HOME;
 
